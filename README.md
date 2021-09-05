@@ -1,1 +1,0 @@
-https://tanchik007.github.io/rsschool-cv/cv
