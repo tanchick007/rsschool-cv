@@ -21,7 +21,9 @@ A passionate Junior FrontEnd Developer with desire and ability to learn quickly 
 - JavaScript Basics
 - Git/GitHub
 - React JS, Redux
+
 ***
+
 ### __Code Example:__
 ```JavaScript
 function absentVowel(x){
@@ -35,6 +37,7 @@ function absentVowel(x){
 ```
 
 ***
+
 ### __Education:__ 
 - __University__   
 Besarusian State University of Informatics and Radioelectronics  
@@ -46,6 +49,7 @@ Besarusian State University of Informatics and Radioelectronics
    in progress...
    - RS Schools Course «JavaScript/Front-end. Stage 1»  
    in progress...
+
 ***
 
 ### __Languages:__  
