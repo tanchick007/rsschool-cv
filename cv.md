@@ -4,8 +4,11 @@
 ### __Contact information:__  
 __Phone:__ +375257104972  
 __Email:__ annoying_tanya@mail.ru  
-__Telegram:__ @whyareuthere
+__Telegram:__ @whyareuthere  
+[GitHub](https://github.com/tanchick007)
+
 ***
+
 ### __About Me:__
 
 A passionate Junior FrontEnd Developer with desire and ability to learn quickly and learn new things whose dream is to become a part of a strong team with extraordinary projects and create beautiful interactive sites!
