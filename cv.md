@@ -30,3 +30,21 @@ function absentVowel(x){
   }
 }
 ```
+
+***
+### __Education:__ 
+- __University__   
+Besarusian State University of Informatics and Radioelectronics  
+2020 - present 
+- __Courses__  
+   - TeachMeSkills  
+   December 2021 - August 2021   
+   - JavaScript Manual on learnjavascript.ru  
+   in progress...
+   - RS Schools Course «JavaScript/Front-end. Stage 1»  
+   in progress...
+***
+
+### __Languages:__  
+- Russian(native)
+- English(B1)
