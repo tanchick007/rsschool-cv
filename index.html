@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV</title>
+    <link rel="stylesheet" href="./sass/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Open+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+  </head>
+  <body>
+    <div class="centering-block">
+      <header class="header">
+        <div class="header__image">
+          <img class="header__photo" src="./img/a-70.jpg" alt="Photo" />
+        </div>
+        <div class="header__info">
+          <h2 class="header__title">Tatsiana Shurakova</h2>
+          <p class="header__subtitle">Junior FrontEnd Developer</p>
+          <ul class="header__contacts">
+            <li class="header__item header__item_github">
+              <a href="https://github.com/tanchick007"
+                >https://github.com/tanchick007</a
+              >
+            </li>
+            <li class="header__item header__item_email">
+              <a href="mailto:annoying_tanya@mail.ru">annoying_tanya@mail.ru</a>
+            </li>
+            <li class="header__item header__item_phone">
+              <a href="tel:+375250000000">+375-25-710-49-72</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main>
+        <div class="wrapper">
+          <section class="about-me">
+            <div class="about-me__info">
+              <h3 class="title title_pink">ABOUT ME</h3>
+              <p class="about-me__text">
+                A passionate Junior FrontEnd Developer with desire and ability
+                to learn quickly and learn new things whose dream is to become a
+                part of a strong team with extraordinary projects and create
+                beautiful interactive sites!
+              </p>
+            </div>
+            <div class="about-me__education">
+              <h3 class="title title_purple">EDUCATION</h3>
+              <ul class="about-me__items">
+                <li class="about-me__item">
+                  <div class="about-me__box">
+                    <h5 class="about-me__institution">
+                      Programming School "TeachMeSkills"
+                    </h5>
+                    <span class="about-me__date">2020-10 - 2021-08</span>
+                  </div>
+                  <p class="about-me__desc">
+                    During the training, I gained incredibly useful and
+                    interesting skills in layout and programming in JavaScript,
+                    and also worked with various frameworks like React.
+                  </p>
+                </li>
+                <li class="about-me__item">
+                  <div class="about-me__box">
+                    <h5 class="about-me__institution">
+                      Belarusian State University of Informatics and
+                      Radioelectronics
+                    </h5>
+                    <span class="about-me__date">2020 - present</span>
+                  </div>
+                  <p class="about-me__desc">
+                    At the moment I am a second year student of the Belarusian
+                    State University of Informatics and Radioelectronics,
+                    Faculty of Engineering and Economics.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="about-me__projects">
+              <h3 class="title title_pink">PROJECTS</h3>
+              <div class="about-me__container">
+                <div class="about-me__project">
+                  <div class="about-me__project_one">
+                    <div class="project-img__overlay"></div>
+                    <img
+                      class="project-img"
+                      src="./img/konstruct.PNG"
+                      alt="project"
+                    />
+                    <div class="project-img__details fadeIn-top">
+                      <h3>Konstruct</h3>
+                      <a href="https://github.com/tanchick007/html_konstruct"
+                        >Simple layout</a
+                      >
+                    </div>
+                  </div>
+                  <p>Konstruct</p>
+                </div>
+                <div class="about-me__project">
+                  <div class="about-me__project_two">
+                    <div class="project-img__overlay"></div>
+                    <img
+                      class="project-img"
+                      src="./img/timer.PNG"
+                      alt="project"
+                    />
+                    <div class="project-img__details fadeIn-top">
+                      <h3>Timer</h3>
+                      <a href="https://jsfiddle.net/fzxsL0qn/3/"
+                        >Simple timet using JS</a
+                      >
+                    </div>
+                  </div>
+                  <p>Timer</p>
+                </div>
+              </div>
+            </div>
+            <div class="about-me__code">
+              <h3 class="title title_purple">CODE EXAMPLE</h3>
+              <pre class="about-me__codeblock">
+                <code class="language-javascript">
+function isPrime(n) {
+  if (n &lt; 2) { return false }
+   (let i = 2; i &lt; n; i++) {
+      if (n % i === 0) {
+        return false;
+      } 
+    }
+  return true;
+}                  
+              </code>
+            </pre>
+            </div>
+          </section>
+          <aside class="skills-box">
+            <div class="skills-box__skills">
+              <h3 class="title title_purple">SKILLS</h3>
+              <ul class="skills-box__list">
+                <li class="skills-box__item">
+                  <span class="skills-box__skill">HTLM5</span>
+                  <div class="skills-box__prline skills-box__prline_html"></div>
+                </li>
+                <li class="skills-box__item">
+                  <span class="skills-box__skill">CSS3/SASS</span>
+                  <div class="skills-box__prline skills-box__prline_css"></div>
+                </li>
+                <li class="skills-box__item">
+                  <span class="skills-box__skill">JavaScript Basics</span>
+                  <div class="skills-box__prline skills-box__prline_js"></div>
+                </li>
+                <li class="skills-box__item">
+                  <span class="skills-box__skill">Git/GitHub</span>
+                  <div class="skills-box__prline skills-box__prline_git"></div>
+                </li>
+                <li class="skills-box__item">
+                  <span class="skills-box__skill">React JS</span>
+                  <div
+                    class="skills-box__prline skills-box__prline_react"
+                  ></div>
+                </li>
+              </ul>
+            </div>
+            <div class="skills-box__hobbies">
+              <h3 class="title title_pink">HOBBIES</h3>
+              <ul>
+                <li class="skills-box__box">
+                  <img
+                    class="skills-box__img"
+                    src="./img/icons/lotus-position.svg"
+                    alt="lotus"
+                  />
+                  <p class="skills-box__hobby">Meditation</p>
+                </li>
+                <li class="skills-box__box">
+                  <img
+                    class="skills-box__img"
+                    src="./img/icons/open-book.svg"
+                    alt="book"
+                  />
+                  <p class="skills-box__hobby">Reading</p>
+                </li>
+              </ul>
+            </div>
+            <div class="skills-box__languages">
+              <h3 class="title title_purple">LANGUAGES</h3>
+              <ul>
+                <li class="skills-box__container">
+                  <p class="skills-box__language">RUSSIAN</p>
+                  <span class="skills-box__level">100%</span>
+                </li>
+                <li class="skills-box__container">
+                  <p class="skills-box__language skills-box__language_primary">
+                    ENGLISH
+                  </p>
+                  <span class="skills-box__level">50%</span>
+                </li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__info">
+          <a href="https://github.com/tanchick007">
+            <img src="./img/icons/github.svg" alt="github"
+          /></a>
+          <p>Created in 2021</p>
+          <a href="https://rs.school/index.html">
+            <img
+              src="https://rs.school/images/rs_school_js.svg"
+              alt="rs_school"
+          /></a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

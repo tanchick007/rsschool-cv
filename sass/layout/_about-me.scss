@@ -1,0 +1,112 @@
+.about-me {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    &__info {
+        @extend %column-layout;
+        max-width: 450px;
+        margin: 0 0 25px
+    }
+
+    &__text {
+        @include font(14px, 18px, 400, normal, $color-text);
+    }
+
+    &__education {
+        @extend %column-layout;
+    }
+
+    &__item {
+        margin: 0 0 15px;
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 10px;
+    }
+
+    &__institution {
+        @include font(14px, 18px, 700, normal, $color-text);
+    }
+
+    &__date {
+        position: relative;
+        @include font(12px, 15px, 400, normal, $color-text);
+        &::after {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 4px;
+            background-color: $color-primary;
+            bottom: 4px;
+            left: 0;
+            z-index: -1;
+        }
+    }
+
+    &__desc {
+        @include font(13px, 15px, 400, normal, $color-text);
+        padding: 0 0 0 20px;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 4px;
+            height: 4px;
+            background-color: $color-text;
+            border-radius: 50%;
+            top: 4px;
+            left: 5px;
+        }
+    }
+
+    &__code {
+        @extend %column-layout;
+    }
+
+    &__projects {
+        @extend %column-layout;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__project {
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin: 0 0 20px;
+
+        p {
+            @include font(20px, 25px, 400, normal, $color-text);
+        }
+
+        &_one, &_two {
+            position: relative;
+            width: 50%;
+            margin-right: 35px;
+
+            &:hover {
+                .project-img__overlay{
+                    opacity: 1;
+                  }
+                  .project-img__details{
+                    top: 50%;
+                    left: 50%;
+                    opacity: 1;
+                  }
+            }
+        }
+    }
+
+    &__codeblock {
+        width: 100%;
+        margin-top: -20px;
+    }
+}
+
