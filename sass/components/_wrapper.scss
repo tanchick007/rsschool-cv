@@ -1,0 +1,39 @@
+.centering-block {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top: 300px solid $color-primary;
+        border-right: 383px solid transparent;
+        top: 0;
+        left: 0;
+        z-index: -2;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 132px;
+        left: -37px;
+        width: 514px;
+        height: 0.4px;
+        background: black;
+        transform: rotate(-31deg);
+        z-index: -2;
+    }
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 750px;
+    margin: auto;
+}

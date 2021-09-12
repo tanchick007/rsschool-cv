@@ -1,0 +1,18 @@
+.footer {
+    width: 100%;
+    background-color: $color-primary;
+    padding: 10px 0;
+
+    &__info {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        @include font(20px, 25px, 400, normal, $color-text);
+        a {
+            width: 55px;
+            &:last-child {
+                width: 100px;
+            }
+        }
+    }
+}

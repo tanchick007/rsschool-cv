@@ -1,0 +1,94 @@
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 55px 0;
+    
+    &__image {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 197px;
+            height: 197px;
+            border-radius: 50%;
+            background: #ffffff;
+            z-index: -1;
+            top: -17px;
+            left: -10px;
+        }
+
+        &::after {
+            position: absolute;
+            content: '';
+            width: 197px;
+            height: 197px;
+            border-radius: 50%;
+            border: 1px solid;
+            top: -10px;
+            left: -15px;
+        }
+    }
+    &__photo {
+        width: 197px;
+        border-radius: 50%;
+    }
+
+    &__title{
+        @include font(36px, 28px, 700, normal, $color-text);
+        margin: 0 0 15px;
+    }
+
+    &__subtitle {
+        @include font(18px, 15px, 400, normal, $color-text);
+        margin: 0 0 20px;
+    }
+
+    &__item {
+        position: relative;
+        margin-bottom: 15px;
+        padding: 10px 65px;
+        border-radius: 20px;
+        background: $color-additional;
+        & > *{
+            @include font(13px, 15px, 400, normal, $color-text);
+        }
+
+        &::before {
+            position: absolute;
+            width: 37px;
+            height: 37px;
+            border: 1px solid $color-text;
+            border-radius: 50%;
+            background-color: #ffffff;
+            background-position: center;
+            background-repeat: no-repeat;
+            content: '';
+            top: 0px;
+            left: -1px;
+        }
+
+        &_github {
+            &::before {
+                background-image: url('../img/icons/github.svg');
+                background-size: 27px 20px;
+            }
+        }
+
+        &_email {
+            &::before {
+                background-image: url('../img/icons/email.svg');
+                background-size: 17px 20px;
+            }
+        }
+
+        &_phone {
+            &::before {
+                background-image: url('../img/icons/phone.svg');
+                background-size: 15px 15px;
+            }
+        }
+    }
+}

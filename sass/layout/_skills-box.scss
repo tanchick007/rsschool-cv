@@ -1,0 +1,112 @@
+.skills-box {
+    width: 25%;
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 0 15px;
+    }
+
+    &__skill {
+        @include font(12px, 14px, 400, normal, $color-text);
+    }
+
+    &__prline {
+        position: relative;
+        width: 75px;
+        height: 5px;
+        background-color: $color-skill;
+
+        &::before {
+            transform: scaleX(0);
+            transform-origin: bottom right;
+        }
+
+        &:hover {
+            &::before {
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
+        }
+
+        &::before {
+            content: " ";
+            display: block;
+            position: absolute;
+            top: 0; right: 0; bottom: 0; left: 0;
+            inset: 0 0 0 0;
+            background: $color-primary;
+            z-index: 0;
+            transition: transform .3s ease;
+        }
+
+        &_html {
+            background: linear-gradient(to right, $color-additional 70%, $color-skill 70%);
+            &::before {
+                background: $color-additional;
+            }
+        }
+
+        &_css {
+            background: linear-gradient(to right, $color-primary 70%, $color-skill 70%);;
+        }
+
+        &_js {
+            background: linear-gradient(to right, $color-additional 50%, $color-skill 50%);
+            &::before {
+                background: $color-additional;
+            }
+        }
+
+        &_git {
+            background: linear-gradient(to right, $color-primary 45%, $color-skill 45%);;
+        }
+
+        &_react {
+            background: linear-gradient(to right, $color-additional 25%, $color-skill 25%);
+            &::before {
+                background: $color-additional;
+            }
+        }
+    }
+
+    &__img {
+        width: 40px;
+    }
+
+    &__hobby {
+        @include font(16px, 20px, 400, normal, $color-text);
+        padding: 0 0 0 20px;
+    }
+
+    &__box {
+        display: flex;
+        align-items: center;
+        margin: 0 0 15px;
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 0 15px;
+
+    }
+
+    &__language {
+        @include font(15px, 25px, 600, normal, $color-text);
+        padding: 2px 35px;
+        border: 1px solid $color-text;
+        border-radius: 20px;
+        background-color: $color-additional;
+        text-align: center;
+        &_primary {
+            background: linear-gradient(to right, $color-primary 50%, transparent 50%);
+        }
+    }
+
+    &__level {
+        @include font(12px, 14px, 400, normal, $color-text);
+    }
+}
+
