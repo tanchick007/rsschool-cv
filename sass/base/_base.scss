@@ -15,6 +15,10 @@ body {
   @extend %font-primary;
 }
 
+body._lock {
+  overflow: hidden;
+}
+
 main {
   display: block;
   @include media-tablet {

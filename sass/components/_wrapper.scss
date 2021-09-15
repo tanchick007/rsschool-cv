@@ -38,13 +38,13 @@
         transform: rotate(-31deg);
         z-index: -2;
         @include media-tablet {
-            top: 111px;
+            top: 112px;
             left: -32px;
             width: 434px;
         }
 
         @include media-mobile {
-            top: 93px;
+            top: 94px;
             left: -51px;
             width: 364px;
         }
