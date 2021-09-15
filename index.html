@@ -28,7 +28,7 @@
           <img class="header__photo" src="./img/a-70.jpg" alt="Photo" />
         </div>
         <div class="header__info">
-          <h2 class="header__title">Tatsiana Shurakova</h2>
+          <h1 class="header__title">Tatsiana Shurakova</h1>
           <p class="header__subtitle">Junior FrontEnd Developer</p>
           <ul class="header__contacts">
             <li class="header__item header__item_github">
@@ -47,7 +47,7 @@
       </header>
       <main>
         <div class="wrapper">
-          <section class="about-me">
+          <section class="about-me" id="about-me">
             <div class="about-me__info">
               <h3 class="title title_pink">ABOUT ME</h3>
               <p class="about-me__text">
@@ -57,7 +57,7 @@
                 beautiful interactive sites!
               </p>
             </div>
-            <div class="about-me__education">
+            <div class="about-me__education" id="education">
               <h3 class="title title_purple">EDUCATION</h3>
               <ul class="about-me__items">
                 <li class="about-me__item">
@@ -89,7 +89,7 @@
                 </li>
               </ul>
             </div>
-            <div class="about-me__projects">
+            <div class="about-me__projects" id="projects">
               <h3 class="title title_pink">PROJECTS</h3>
               <div class="about-me__container">
                 <div class="about-me__project">
@@ -102,12 +102,15 @@
                     />
                     <div class="project-img__details fadeIn-top">
                       <h3>Konstruct</h3>
-                      <a href="https://github.com/tanchick007/html_konstruct"
+                      <a href="https://tanchick007.github.io/html_konstruct/" target="_blank"
                         >Simple layout</a
                       >
                     </div>
                   </div>
-                  <p>Konstruct</p>
+                  <div class="about-me__project-info">
+                    <h6>Konstruct</h6>
+                    <p>Konstruct - a simple layout using only HTML and CSS.</p>
+                  </div>
                 </div>
                 <div class="about-me__project">
                   <div class="about-me__project_two">
@@ -119,16 +122,19 @@
                     />
                     <div class="project-img__details fadeIn-top">
                       <h3>Timer</h3>
-                      <a href="https://jsfiddle.net/fzxsL0qn/3/"
-                        >Simple timet using JS</a
+                      <a href="https://jsfiddle.net/fzxsL0qn/3/" target="_blank"
+                        >Simple timer using JS</a
                       >
                     </div>
                   </div>
-                  <p>Timer</p>
+                  <div class="about-me__project-info">
+                    <h6>Timer</h6>
+                    <p>My first attempt at doing something more than just <code class="language-javascript">console.log('Hello, World!')</code> :)</p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="about-me__code">
+            <div class="about-me__code" id="code">
               <h3 class="title title_purple">CODE EXAMPLE</h3>
               <pre class="about-me__codeblock">
                 <code class="language-javascript">
@@ -146,7 +152,7 @@ function isPrime(n) {
             </div>
           </section>
           <aside class="skills-box">
-            <div class="skills-box__skills">
+            <div class="skills-box__skills" id="skills">
               <h3 class="title title_purple">SKILLS</h3>
               <ul class="skills-box__list">
                 <li class="skills-box__item">
@@ -173,7 +179,7 @@ function isPrime(n) {
                 </li>
               </ul>
             </div>
-            <div class="skills-box__hobbies">
+            <div class="skills-box__hobbies" id="hobbies">
               <h3 class="title title_pink">HOBBIES</h3>
               <ul>
                 <li class="skills-box__box">
@@ -194,7 +200,7 @@ function isPrime(n) {
                 </li>
               </ul>
             </div>
-            <div class="skills-box__languages">
+            <div class="skills-box__languages" id="languages">
               <h3 class="title title_purple">LANGUAGES</h3>
               <ul>
                 <li class="skills-box__container">
@@ -226,5 +232,6 @@ function isPrime(n) {
         </div>
       </footer>
     </div>
+    <script defer src="./js/index.js"></script>
   </body>
 </html>

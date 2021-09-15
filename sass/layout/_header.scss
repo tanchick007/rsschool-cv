@@ -4,6 +4,12 @@
     align-items: center;
     justify-content: space-evenly;
     padding: 55px 0;
+
+    @include media-tablet {
+        flex-direction: column;
+        padding: 25px 0 15px;
+    }
+
     
     &__image {
         position: relative;
@@ -39,6 +45,13 @@
     &__title{
         @include font(36px, 28px, 700, normal, $color-text);
         margin: 0 0 15px;
+        @include media-tablet {
+            margin: 15px 0 15px;
+        }
+        @include media-mobile {
+            font-size: 33px;
+            margin: 15px 0 15px;
+        }
     }
 
     &__subtitle {
@@ -53,7 +66,11 @@
         border-radius: 20px;
         background: $color-additional;
         & > *{
+            transition: all .2s ease-in-out;
             @include font(13px, 15px, 400, normal, $color-text);
+            &:hover {
+                color: $color-skill;
+            }
         }
 
         &::before {

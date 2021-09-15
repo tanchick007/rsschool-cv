@@ -1,6 +1,6 @@
 .centering-block {
     max-width: 900px;
-    margin: auto;
+    margin: 10px auto 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,6 +16,15 @@
         top: 0;
         left: 0;
         z-index: -2;
+        @include media-tablet {
+            border-top: 250px solid $color-primary;
+            border-right: 333px solid transparent;
+        }
+
+        @include media-mobile {
+            border-top: 180px solid $color-primary;
+            border-right: 263px solid transparent;
+        }
     }
 
     &::after {
@@ -28,6 +37,22 @@
         background: black;
         transform: rotate(-31deg);
         z-index: -2;
+        @include media-tablet {
+            top: 111px;
+            left: -32px;
+            width: 434px;
+        }
+
+        @include media-mobile {
+            top: 93px;
+            left: -51px;
+            width: 364px;
+        }
+        
+    }
+
+    @include media-tablet {
+        max-width: 650px;
     }
 }
 
@@ -36,4 +61,9 @@
     justify-content: space-between;
     width: 750px;
     margin: auto;
+    @include media-tablet {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
 }
