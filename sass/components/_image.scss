@@ -35,10 +35,16 @@
 
     &__details h3 {
         color: #ffffff;
+        @include media-mobile {
+            font-size: 15px;
+        }
     }
 
     &__details a {
         color: #ffffff;
+        @include media-mobile {
+            font-size: 13px;
+        }
     }
 }
 

@@ -1,5 +1,8 @@
 .skills-box {
     width: 25%;
+    @include media-tablet {
+        width: 90%;
+    }
     &__item {
         display: flex;
         align-items: center;
