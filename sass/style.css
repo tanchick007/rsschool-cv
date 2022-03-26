@@ -637,7 +637,6 @@ template {
 }
 .about-me__project_one, .about-me__project_two {
   position: relative;
-  width: 50%;
 }
 .about-me__project_one:hover .project-img__overlay, .about-me__project_two:hover .project-img__overlay {
   opacity: 1;
@@ -700,14 +699,32 @@ template {
   z-index: 0;
   transition: transform 0.3s ease;
 }
+@media (max-width: 769px) {
+  .skills-box__prline::before {
+    background: #FBD6D7;
+  }
+}
 .skills-box__prline_html {
   background: linear-gradient(to right, #FBD6D7 70%, #8D93B5 70%);
 }
 .skills-box__prline_html::before {
   background: #FBD6D7;
 }
+@media (max-width: 769px) {
+  .skills-box__prline_html {
+    background: linear-gradient(to right, #DCE2F2 70%, #8D93B5 70%);
+  }
+  .skills-box__prline_html::before {
+    background: #DCE2F2;
+  }
+}
 .skills-box__prline_css {
   background: linear-gradient(to right, #DCE2F2 70%, #8D93B5 70%);
+}
+@media (max-width: 769px) {
+  .skills-box__prline_css {
+    background: linear-gradient(to right, #FBD6D7 70%, #8D93B5 70%);
+  }
 }
 .skills-box__prline_js {
   background: linear-gradient(to right, #FBD6D7 50%, #8D93B5 50%);
@@ -715,14 +732,35 @@ template {
 .skills-box__prline_js::before {
   background: #FBD6D7;
 }
+@media (max-width: 769px) {
+  .skills-box__prline_js {
+    background: linear-gradient(to right, #DCE2F2 50%, #8D93B5 50%);
+  }
+  .skills-box__prline_js::before {
+    background: #DCE2F2;
+  }
+}
 .skills-box__prline_git {
   background: linear-gradient(to right, #DCE2F2 45%, #8D93B5 45%);
+}
+@media (max-width: 769px) {
+  .skills-box__prline_git {
+    background: linear-gradient(to right, #FBD6D7 45%, #8D93B5 45%);
+  }
 }
 .skills-box__prline_react {
   background: linear-gradient(to right, #FBD6D7 25%, #8D93B5 25%);
 }
 .skills-box__prline_react::before {
   background: #FBD6D7;
+}
+@media (max-width: 769px) {
+  .skills-box__prline_react {
+    background: linear-gradient(to right, #DCE2F2 25%, #8D93B5 25%);
+  }
+  .skills-box__prline_react::before {
+    background: #DCE2F2;
+  }
 }
 .skills-box__img {
   width: 40px;
@@ -758,8 +796,18 @@ template {
   background-color: #FBD6D7;
   text-align: center;
 }
+@media (max-width: 769px) {
+  .skills-box__language {
+    background-color: #DCE2F2;
+  }
+}
 .skills-box__language_primary {
   background: linear-gradient(to right, #DCE2F2 50%, transparent 50%);
+}
+@media (max-width: 769px) {
+  .skills-box__language_primary {
+    background: linear-gradient(to right, #FBD6D7 50%, transparent 50%);
+  }
 }
 .skills-box__level {
   font-size: 12px;
@@ -951,11 +999,11 @@ template {
     font-size: 15px;
   }
 }
-.project-img__details a {
+.project-img__details span {
   color: #ffffff;
 }
 @media (max-width: 371px) {
-  .project-img__details a {
+  .project-img__details span {
     font-size: 13px;
   }
 }

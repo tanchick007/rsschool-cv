@@ -41,6 +41,9 @@
             background: $color-primary;
             z-index: 0;
             transition: transform .3s ease;
+            @include media-tablet {
+                background: $color-additional;
+            }
         }
 
         &_html {
@@ -48,10 +51,19 @@
             &::before {
                 background: $color-additional;
             }
+            @include media-tablet {
+                background: linear-gradient(to right, $color-primary 70%, $color-skill 70%);
+                &::before {
+                    background: $color-primary;
+                }
+            }
         }
 
         &_css {
-            background: linear-gradient(to right, $color-primary 70%, $color-skill 70%);;
+            background: linear-gradient(to right, $color-primary 70%, $color-skill 70%);
+            @include media-tablet {
+                background: linear-gradient(to right, $color-additional 70%, $color-skill 70%);
+            }
         }
 
         &_js {
@@ -59,16 +71,31 @@
             &::before {
                 background: $color-additional;
             }
+            @include media-tablet {
+                background: linear-gradient(to right, $color-primary 50%, $color-skill 50%);
+                &::before {
+                    background: $color-primary;
+                }
+            }
         }
 
         &_git {
-            background: linear-gradient(to right, $color-primary 45%, $color-skill 45%);;
+            background: linear-gradient(to right, $color-primary 45%, $color-skill 45%);
+            @include media-tablet {
+                background: linear-gradient(to right, $color-additional 45%, $color-skill 45%);
+            }
         }
 
         &_react {
             background: linear-gradient(to right, $color-additional 25%, $color-skill 25%);
             &::before {
                 background: $color-additional;
+            }
+            @include media-tablet {
+                background: linear-gradient(to right, $color-primary 25%, $color-skill 25%);
+                &::before {
+                    background: $color-primary;
+                }
             }
         }
     }
@@ -103,8 +130,14 @@
         border-radius: 20px;
         background-color: $color-additional;
         text-align: center;
+        @include media-tablet {
+            background-color: $color-primary;
+        }
         &_primary {
             background: linear-gradient(to right, $color-primary 50%, transparent 50%);
+            @include media-tablet {
+                background: linear-gradient(to right, $color-additional 50%, transparent 50%);
+            }
         }
     }
 

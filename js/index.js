@@ -20,6 +20,7 @@ message('15. Дизайн, оформление, качество выполне
 message('Итого: 150/150(max 160)');
 message('Спасибо за уделенное время!🧡');
 
+//Бургер-меню
 
 const iconMenu = document.querySelector('.navigation__icon');
 const menuBody = document.querySelector('.navigation__body');
@@ -46,3 +47,31 @@ function onMenuClick(e){
         iconMenu.classList.remove('navigation__icon_active');
     }
 }
+
+//Замена стилей при изменении ширины экрана
+
+const titleSkills = document.querySelector('h3[data-skills]'),
+      titleHobbies = document.querySelector('h3[data-hobbies]'),
+      titleLanguages = document.querySelector('h3[data-languages]');
+const mediaQuery = window.matchMedia('(max-width: 769px)');
+
+function changeClass(media) {
+    if(media.matches){
+        titleSkills.classList.remove('title_purple');
+        titleSkills.classList.add('title_pink');
+        titleHobbies.classList.remove('title_pink');
+        titleHobbies.classList.add('title_purple');
+        titleLanguages.classList.remove('title_purple');
+        titleLanguages.classList.add('title_pink');
+    } else {
+        titleSkills.classList.remove('title_pink');
+        titleSkills.classList.add('title_purple');
+        titleHobbies.classList.remove('title_purple');
+        titleHobbies.classList.add('title_pink');
+        titleLanguages.classList.remove('title_pink');
+        titleLanguages.classList.add('title_purple');
+    }
+}
+
+mediaQuery.addListener(changeClass);
+changeClass(mediaQuery);
