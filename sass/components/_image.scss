@@ -40,7 +40,7 @@
         }
     }
 
-    &__details a {
+    &__details span {
         color: #ffffff;
         @include media-mobile {
             font-size: 13px;
