@@ -705,58 +705,58 @@ template {
   }
 }
 .skills-box__prline_html {
-  background: linear-gradient(to right, #FBD6D7 70%, #8D93B5 70%);
+  background: linear-gradient(to right, #FBD6D7 79%, #8D93B5 79%);
 }
 .skills-box__prline_html::before {
   background: #FBD6D7;
 }
 @media (max-width: 769px) {
   .skills-box__prline_html {
-    background: linear-gradient(to right, #DCE2F2 70%, #8D93B5 70%);
+    background: linear-gradient(to right, #DCE2F2 79%, #8D93B5 79%);
   }
   .skills-box__prline_html::before {
     background: #DCE2F2;
   }
 }
 .skills-box__prline_css {
-  background: linear-gradient(to right, #DCE2F2 70%, #8D93B5 70%);
+  background: linear-gradient(to right, #DCE2F2 79%, #8D93B5 79%);
 }
 @media (max-width: 769px) {
   .skills-box__prline_css {
-    background: linear-gradient(to right, #FBD6D7 70%, #8D93B5 70%);
+    background: linear-gradient(to right, #FBD6D7 79%, #8D93B5 79%);
   }
 }
 .skills-box__prline_js {
-  background: linear-gradient(to right, #FBD6D7 50%, #8D93B5 50%);
+  background: linear-gradient(to right, #FBD6D7 65%, #8D93B5 65%);
 }
 .skills-box__prline_js::before {
   background: #FBD6D7;
 }
 @media (max-width: 769px) {
   .skills-box__prline_js {
-    background: linear-gradient(to right, #DCE2F2 50%, #8D93B5 50%);
+    background: linear-gradient(to right, #DCE2F2 65%, #8D93B5 65%);
   }
   .skills-box__prline_js::before {
     background: #DCE2F2;
   }
 }
 .skills-box__prline_git {
-  background: linear-gradient(to right, #DCE2F2 45%, #8D93B5 45%);
+  background: linear-gradient(to right, #DCE2F2 65%, #8D93B5 65%);
 }
 @media (max-width: 769px) {
   .skills-box__prline_git {
-    background: linear-gradient(to right, #FBD6D7 45%, #8D93B5 45%);
+    background: linear-gradient(to right, #FBD6D7 65%, #8D93B5 65%);
   }
 }
 .skills-box__prline_react {
-  background: linear-gradient(to right, #FBD6D7 25%, #8D93B5 25%);
+  background: linear-gradient(to right, #FBD6D7 45%, #8D93B5 45%);
 }
 .skills-box__prline_react::before {
   background: #FBD6D7;
 }
 @media (max-width: 769px) {
   .skills-box__prline_react {
-    background: linear-gradient(to right, #DCE2F2 25%, #8D93B5 25%);
+    background: linear-gradient(to right, #DCE2F2 45%, #8D93B5 45%);
   }
   .skills-box__prline_react::before {
     background: #DCE2F2;
@@ -785,6 +785,8 @@ template {
   margin: 0 0 15px;
 }
 .skills-box__language {
+  width: 140px;
+  box-sizing: border-box;
   font-size: 15px;
   font-weight: 600;
   line-height: 25px;
@@ -807,6 +809,14 @@ template {
 @media (max-width: 769px) {
   .skills-box__language_primary {
     background: linear-gradient(to right, #FBD6D7 50%, transparent 50%);
+  }
+}
+.skills-box__language_additional {
+  background: linear-gradient(to right, #FBD6D7 10%, transparent 10%);
+}
+@media (max-width: 769px) {
+  .skills-box__language_additional {
+    background: linear-gradient(to right, #DCE2F2 10%, transparent 10%);
   }
 }
 .skills-box__level {
