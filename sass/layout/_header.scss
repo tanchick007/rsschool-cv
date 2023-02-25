@@ -1,111 +1,110 @@
 .header {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 15px 0 55px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 15px 0 55px;
 
+  @include media-tablet {
+    flex-direction: column;
+    padding: 25px 0 15px;
+  }
+
+  &__image {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 197px;
+      height: 197px;
+      border-radius: 50%;
+      background: #ffffff;
+      z-index: -1;
+      top: -17px;
+      left: -10px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 197px;
+      height: 197px;
+      border-radius: 50%;
+      border: 1px solid;
+      top: -10px;
+      left: -15px;
+    }
+  }
+  &__photo {
+    width: 197px;
+    border-radius: 50%;
+  }
+
+  &__title {
+    @include font(36px, 28px, 700, normal, $color-text);
+    margin: 0 0 15px;
     @include media-tablet {
-        flex-direction: column;
-        padding: 25px 0 15px;
+      margin: 15px 0 15px;
+    }
+    @include media-mobile {
+      font-size: 33px;
+      margin: 15px 0 15px;
+    }
+  }
+
+  &__subtitle {
+    @include font(18px, 15px, 400, normal, $color-text);
+    margin: 0 0 20px;
+  }
+
+  &__item {
+    position: relative;
+    margin-bottom: 15px;
+    padding: 10px 65px;
+    border-radius: 20px;
+    background: $color-additional;
+    & > * {
+      transition: all 0.2s ease-in-out;
+      @include font(13px, 15px, 400, normal, $color-text);
+      &:hover {
+        color: $color-skill;
+      }
     }
 
-    
-    &__image {
-        position: relative;
-
-        &::before {
-            position: absolute;
-            content: '';
-            width: 197px;
-            height: 197px;
-            border-radius: 50%;
-            background: #ffffff;
-            z-index: -1;
-            top: -17px;
-            left: -10px;
-        }
-
-        &::after {
-            position: absolute;
-            content: '';
-            width: 197px;
-            height: 197px;
-            border-radius: 50%;
-            border: 1px solid;
-            top: -10px;
-            left: -15px;
-        }
-    }
-    &__photo {
-        width: 197px;
-        border-radius: 50%;
+    &::before {
+      position: absolute;
+      width: 37px;
+      height: 37px;
+      border: 1px solid $color-text;
+      border-radius: 50%;
+      background-color: #ffffff;
+      background-position: center;
+      background-repeat: no-repeat;
+      content: "";
+      top: 0px;
+      left: -1px;
     }
 
-    &__title{
-        @include font(36px, 28px, 700, normal, $color-text);
-        margin: 0 0 15px;
-        @include media-tablet {
-            margin: 15px 0 15px;
-        }
-        @include media-mobile {
-            font-size: 33px;
-            margin: 15px 0 15px;
-        }
+    &_github {
+      &::before {
+        background-image: url("../img/icons/github.svg");
+        background-size: 27px 20px;
+      }
     }
 
-    &__subtitle {
-        @include font(18px, 15px, 400, normal, $color-text);
-        margin: 0 0 20px;
+    &_email {
+      &::before {
+        background-image: url("../img/icons/email.svg");
+        background-size: 17px 20px;
+      }
     }
 
-    &__item {
-        position: relative;
-        margin-bottom: 15px;
-        padding: 10px 65px;
-        border-radius: 20px;
-        background: $color-additional;
-        & > *{
-            transition: all .2s ease-in-out;
-            @include font(13px, 15px, 400, normal, $color-text);
-            &:hover {
-                color: $color-skill;
-            }
-        }
-
-        &::before {
-            position: absolute;
-            width: 37px;
-            height: 37px;
-            border: 1px solid $color-text;
-            border-radius: 50%;
-            background-color: #ffffff;
-            background-position: center;
-            background-repeat: no-repeat;
-            content: '';
-            top: 0px;
-            left: -1px;
-        }
-
-        &_github {
-            &::before {
-                background-image: url('../img/icons/github.svg');
-                background-size: 27px 20px;
-            }
-        }
-
-        &_email {
-            &::before {
-                background-image: url('../img/icons/email.svg');
-                background-size: 17px 20px;
-            }
-        }
-
-        &_phone {
-            &::before {
-                background-image: url('../img/icons/phone.svg');
-                background-size: 15px 15px;
-            }
-        }
+    &_location {
+      &::before {
+        background-image: url("../img/icons/location.svg");
+        background-size: 15px 15px;
+      }
     }
+  }
 }

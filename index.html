@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV</title>
+    <link rel="shortcut icon" href="./img/icons/favico.png" type="image/x-icon" />
     <link rel="stylesheet" href="./sass/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,9 +30,15 @@
         </div>
         <nav class="navigation__body">
           <ul class="navigation__list">
-            <li class="navigation__item"><a class="navigation__link" href="#about-me">ABOUT ME</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="#education">EDUCATION</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="#projects">PROJECTS</a></li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#about-me">ABOUT ME</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#education">EDUCATION</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#projects">PROJECTS</a>
+            </li>
             <li class="navigation__item"><a class="navigation__link" href="#skills">SKILLS</a></li>
           </ul>
         </nav>
@@ -45,15 +52,16 @@
           <p class="header__subtitle">FrontEnd Developer</p>
           <ul class="header__contacts">
             <li class="header__item header__item_github">
-              <a href="https://github.com/tanchick007"
-                >https://github.com/tanchick007
-              </a>
+              <a href="https://github.com/tanchick007">https://github.com/tanchick007 </a>
             </li>
             <li class="header__item header__item_email">
               <a href="mailto:annoying_tanya@mail.ru">annoying_tanya@mail.ru</a>
             </li>
-            <li class="header__item header__item_phone">
-              <a href="tel:+375250000000">+375-25-710-49-72</a>
+            <li class="header__item header__item_location">
+              <a
+                href="https://www.google.com/search?q=Krakow&rlz=1C1GCEA_enBY967BY967&oq=Krakow&aqs=chrome..69i57j69i59j35i39j46i67j0i67j69i60l3.3768j1j7&sourceid=chrome&ie=UTF-8"
+                >Kraków, Poland</a
+              >
             </li>
           </ul>
         </div>
@@ -64,10 +72,10 @@
             <div class="about-me__info">
               <h2 class="title title_pink">ABOUT ME</h2>
               <p class="about-me__text">
-                A passionate FrontEnd Developer with desire and ability
-                to learn quickly and learn new things whose dream is to become a
-                part of a strong team with extraordinary projects and create
-                beautiful interactive sites!
+                Software Engineer with 1,5+ experience in various projects. I'm a proactive member
+                of the team who always seeks out for innovative solutions to everyday problems. I
+                love to learn and dig into new technologies, and can pick them up quickly. I'm a
+                very easygoing person and always open for new opportunities!
               </p>
             </div>
             <div class="about-me__education" id="education">
@@ -75,51 +83,46 @@
               <ul class="about-me__items">
                 <li class="about-me__item">
                   <div class="about-me__box">
-                    <h5 class="about-me__institution">
-                      Programming School "TeachMeSkills"
-                    </h5>
+                    <h5 class="about-me__institution">Programming School "TeachMeSkills"</h5>
                     <span class="about-me__date">2020-10 - 2021-08</span>
                   </div>
                   <p class="about-me__desc">
-                    During the training, I gained incredibly useful and
-                    interesting skills in layout and programming in JavaScript,
-                    and also worked with various frameworks like React.
+                    During my studies, I learned HTML, CSS and JavaScript, and also started working
+                    with React and Redux. My first React project was an online bookstore :)
                   </p>
                 </li>
-                <li class="about-me__item">
+                <!-- <li class="about-me__item">
                   <div class="about-me__box">
-                    <h5 class="about-me__institution">
-                      Internship at "iTechArt"
-                    </h5>
+                    <h5 class="about-me__institution">Internship at "iTechArt"</h5>
                     <span class="about-me__date">2021-10 - 2021-12</span>
                   </div>
                   <p class="about-me__desc">
-                    During the internship, I gained knowledge of React and Redax, and also created a project called "Online Game Store".
+                    During the internship, I gained knowledge of React and Redux, and also created a
+                    project called "Online Game Store".
                   </p>
-                </li>
+                </li> -->
               </ul>
             </div>
             <div class="about-me__projects" id="projects">
               <h2 class="title title_pink">PROJECTS</h2>
               <div class="about-me__container">
                 <div class="about-me__project">
-                  <a href="https://jsfiddle.net/19edxbmt/" target="_blank">
+                  <a
+                    href="https://rolling-scopes-school.github.io/tanchick007-JSFEPRESCHOOL2022Q4/momentum/src/"
+                    target="_blank"
+                  >
                     <div class="about-me__project_two">
                       <div class="project-img__overlay"></div>
-                      <img
-                        class="project-img"
-                        src="./img/timer.PNG"
-                        alt="project"
-                      />
+                      <img class="project-img" src="./img/momentum.png" alt="project" />
                       <div class="project-img__details fadeIn-top">
-                        <h3>Timer</h3>
-                        <span>Simple timer using JS</span>
+                        <h3>Momentum</h3>
+                        <span>Chrome extension copy</span>
                       </div>
                     </div>
                   </a>
                   <div class="about-me__project-info">
-                    <h6>Timer</h6>
-                    <p>A super simple javascript countdown(HTML, CSS, JS).</p>
+                    <h6>Momentum</h6>
+                    <p>A copy of Chrome extension "Momentum"</p>
                   </div>
                 </div>
               </div>
@@ -163,9 +166,7 @@ function isPrime(n) {
                 </li>
                 <li class="skills-box__item">
                   <span class="skills-box__skill">React JS</span>
-                  <div
-                    class="skills-box__prline skills-box__prline_react"
-                  ></div>
+                  <div class="skills-box__prline skills-box__prline_react"></div>
                 </li>
               </ul>
             </div>
@@ -173,19 +174,15 @@ function isPrime(n) {
               <h2 class="title title_pink" data-hobbies>HOBBIES</h2>
               <ul>
                 <li class="skills-box__box">
-                  <img
-                    class="skills-box__img"
-                    src="./img/icons/lotus-position.svg"
-                    alt="lotus"
-                  />
-                  <p class="skills-box__hobby">Meditation</p>
+                  <img class="skills-box__img" src="./img/icons/stretching.svg" alt="stretching" />
+                  <p class="skills-box__hobby">Stretching</p>
                 </li>
                 <li class="skills-box__box">
-                  <img
-                    class="skills-box__img"
-                    src="./img/icons/open-book.svg"
-                    alt="book"
-                  />
+                  <img class="skills-box__img" src="./img/icons/heels.svg" alt="dance" />
+                  <p class="skills-box__hobby">Dancing</p>
+                </li>
+                <li class="skills-box__box">
+                  <img class="skills-box__img" src="./img/icons/open-book.svg" alt="book" />
                   <p class="skills-box__hobby">Reading</p>
                 </li>
               </ul>
@@ -198,15 +195,11 @@ function isPrime(n) {
                   <span class="skills-box__level">100%</span>
                 </li>
                 <li class="skills-box__container">
-                  <p class="skills-box__language skills-box__language_primary">
-                    ENGLISH
-                  </p>
+                  <p class="skills-box__language skills-box__language_primary">ENGLISH</p>
                   <span class="skills-box__level">50%</span>
                 </li>
                 <li class="skills-box__container">
-                  <p class="skills-box__language skills-box__language_additional">
-                    POLISH
-                  </p>
+                  <p class="skills-box__language skills-box__language_additional">POLISH</p>
                   <span class="skills-box__level">10%</span>
                 </li>
               </ul>
@@ -221,9 +214,7 @@ function isPrime(n) {
           /></a>
           <p>Created in 2021</p>
           <a href="https://rs.school/index.html">
-            <img
-              src="https://rs.school/images/rs_school_js.svg"
-              alt="rs_school"
+            <img src="https://rs.school/images/rs_school_js.svg" alt="rs_school"
           /></a>
         </div>
       </footer>
