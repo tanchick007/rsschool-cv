@@ -467,8 +467,8 @@ template {
   background-image: url("../img/icons/email.svg");
   background-size: 17px 20px;
 }
-.header__item_phone::before {
-  background-image: url("../img/icons/phone.svg");
+.header__item_location::before {
+  background-image: url("../img/icons/location.svg");
   background-size: 15px 15px;
 }
 
